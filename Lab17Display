@@ -1,0 +1,46 @@
+import javax.swing.*;
+
+import java.util.*;
+
+
+public class Display {
+
+
+
+
+  public static void main(String[] args) {
+  	String Again;
+  	int Counter = 0;
+  	
+  	do{
+  		
+  
+  	
+  	Dice myDice = new Dice();
+  	
+   String UserNumberString=JOptionPane.showInputDialog("How many dice would you like to roll?");
+  	
+  	int  UserNumber = Integer.parseInt(UserNumberString);
+  	
+  	String MaxNString= JOptionPane.showInputDialog("What would you like for the maximum number on the dice?");
+  	
+  	int MaxN= Integer.parseInt(MaxNString);
+  	
+  	myDice.setRollNumber(UserNumber);
+  	myDice.setMNumber(MaxN);
+  	Counter=Counter+myDice.RollNumber;		
+JOptionPane.showMessageDialog(null, Dice.Roll_1_Dice());
+JOptionPane.showMessageDialog(null,"You rolled "+Counter+" times.");
+
+//Restart the loop 
+Again = JOptionPane.showInputDialog( " Would you like to try again? Y/N: ");
+
+  	} while (Again.equalsIgnoreCase("Y"));
+  	
+  	
+
+  
+
+  }
+
+}
