@@ -1,0 +1,55 @@
+import javax.swing.*;
+
+import java.util.*;
+
+
+public class Dice {
+private static int RollCount = 0;
+int RollNumber;
+static int MNumber;
+int Counter;
+
+  public static int Roll_1_Dice() {
+  	
+  	int Roll;
+  	int MaxNumber = MNumber;
+  	
+  	
+  	Random generator = new Random();
+  	return Roll = generator.nextInt(MaxNumber) + 1;
+  			
+  }
+  
+  public void setMNumber(int MaxN){
+  	
+  	MNumber = MaxN;
+  }
+  
+  public int getMNumber(){
+  	
+  	return MNumber;
+  }
+  
+  public void setRollNumber(int UserNumber){
+  	
+  	RollNumber = UserNumber;
+  }
+  
+  public int getRollNumber(){
+  	
+  	return RollNumber;
+  }
+  
+  public int RollCount(){
+  	RollCount=RollNumber+RollCount;
+  	return RollCount;
+  }
+
+  
+
+  }
+  
+
+  
+
+
