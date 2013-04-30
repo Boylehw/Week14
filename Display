@@ -1,0 +1,26 @@
+import javax.swing.*;
+import java.util.*;
+
+
+public class Display {
+
+
+
+
+  public static void main(String[] args) {
+  	
+  	Dice myDice = new Dice();
+  	
+   String UserNumberString=JOptionPane.showInputDialog("How many dice would you like to roll?");
+  	
+  	int UserNumber = Integer.parseInt(UserNumberString);
+  	
+
+  	
+  	
+
+  
+
+  }
+
+}
