@@ -15,7 +15,7 @@ public class Display {
   	
   	int UserNumber = Integer.parseInt(UserNumberString);
   	
-
+JOptionPane.showMessageDialog(null, Dice.Roll_1_Dice());
   	
   	
 
