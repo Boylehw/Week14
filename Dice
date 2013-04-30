@@ -1,0 +1,34 @@
+import javax.swing.*;
+import java.util.*;
+
+
+public class Dice {
+int RollNumber;
+
+  public static int Roll_1_Dice() {
+  	
+  	int Roll;
+  	int RollDice;
+  	
+  	Random generator = new Random();
+  	return Roll = generator.nextInt(6) + 1;
+  	
+  }
+  
+  public void setRollNumber(int UserNumber){
+  	
+  	RollNumber = UserNumber;
+  }
+  
+  public int getRollNumber(){
+  	
+  	return RollNumber;
+  }
+  
+
+  }
+  
+
+  
+
+
